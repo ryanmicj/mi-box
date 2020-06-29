@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "2531381a-18df-42ee-b382-3c87b028eb4b",
+		"name": "MI-BOX Quote Methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Serviced Postal Codes by Postal Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Serviced_Postal_Codes_Report?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Postal_Code_Text=\"46311\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Serviced_Postal_Codes_Report"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Postal_Code_Text=\"46311\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Service Types by Dealer AND Availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Service_Type_Report?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Availability=\"Active\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Service_Type_Report"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Availability=\"Active\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Storage Rates by Dealer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Storage_Rates_Report?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Storage_Rates_Report"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Storage Locations by Dealer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Storage_Location_Options_Report?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Storage_Location_Options_Report"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Promotional Discounts by Dealer AND Availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Promotional_Discounts_Report?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Is_Available=\"Yes\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Promotional_Discounts_Report"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Is_Available=\"Yes\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Postal Zones Pricing by Dealer AND Postal Zone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Postal_Zones_Pricing_Report?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Postal_Zone_Name=\"A\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Postal_Zones_Pricing_Report"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Postal_Zone_Name=\"A\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Additional Items by Dealer AND Availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://creator.zoho.com/api/json/fergie2-webquote-test/view/All_Add_Ons?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&raw=true&criteria=Dealer_Lookup.Company_Name=\"MI-BOX Joliet\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"json",
+						"fergie2-webquote-test",
+						"view",
+						"All_Add_Ons"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "raw",
+							"value": "true"
+						},
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX Joliet\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add Additional Items to Quote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://creator.zoho.com/api/xml/write?authtoken=4157d4c5cc19e4e6d65091d00d0332f1&scope=creatorapi&zc_ownername=brianborn11&XMLString= <ZohoCreator>\n    <applicationlist>\n        <application name='fergie-2-0-mibox-selection'>\n            <formlist>\n                <form name='Give_a_Quote'>\n                    <add>\n                        <field name='Name'>\n                            <value>XMLRPC Tester</value>\n                        </field>\n                        <field name='Dealer_Lookup'>\n                            <value>MI-BOX NWI</value>\n                        </field>\n                        <field name='Quote_Status'>\n                            <value>Follow Up</value>\n                        </field>Em\n                        <field name='Storage_Location_Options_Lookup'>\n                            <value>Outside At MI-BOX Secure Storage Center</value>\n                        </field>\n                        <field name='Select_Add_Ons'>\n                            <add>\n                            \t<field name='Add_Ons'>\n                            \t\t<value>$5,000 Coverage</value>\n                            \t</field>\n                            </add>\n                        </field>\n                    </add>\n                </form>\n            </formlist>\n        </application>\n    </applicationlist>\n</ZohoCreator>",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"xml",
+						"write"
+					],
+					"query": [
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1"
+						},
+						{
+							"key": "scope",
+							"value": "creatorapi"
+						},
+						{
+							"key": "zc_ownername",
+							"value": "brianborn11"
+						},
+						{
+							"key": "XMLString",
+							"value": " <ZohoCreator>\n    <applicationlist>\n        <application name='fergie-2-0-mibox-selection'>\n            <formlist>\n                <form name='Give_a_Quote'>\n                    <add>\n                        <field name='Name'>\n                            <value>XMLRPC Tester</value>\n                        </field>\n                        <field name='Dealer_Lookup'>\n                            <value>MI-BOX NWI</value>\n                        </field>\n                        <field name='Quote_Status'>\n                            <value>Follow Up</value>\n                        </field>Em\n                        <field name='Storage_Location_Options_Lookup'>\n                            <value>Outside At MI-BOX Secure Storage Center</value>\n                        </field>\n                        <field name='Select_Add_Ons'>\n                            <add>\n                            \t<field name='Add_Ons'>\n                            \t\t<value>$5,000 Coverage</value>\n                            \t</field>\n                            </add>\n                        </field>\n                    </add>\n                </form>\n            </formlist>\n        </application>\n    </applicationlist>\n</ZohoCreator>"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
