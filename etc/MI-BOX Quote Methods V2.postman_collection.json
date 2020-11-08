@@ -1,0 +1,742 @@
+{
+	"info": {
+		"_postman_id": "b079b7d6-cc7f-47bc-87e8-ad1f587124c8",
+		"name": "MI-BOX Quote Methods V2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Serviced Postal Codes by Postal Code",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report//All_Serviced_Postal_Codes_Report?criteria=Postal_Code_Text=\"46311\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"",
+						"All_Serviced_Postal_Codes_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Postal_Code_Text=\"46311\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Dealers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/MI_BOX_Dealer_Agent_Information_Report",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"MI_BOX_Dealer_Agent_Information_Report"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "{{access_token}}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Available MI-BOX Sizes by Dealer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Available_MI_BOX_Sizes_Report",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Available_MI_BOX_Sizes_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Service Types by Dealer AND Availability",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Service_Type_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Availability=\"Active\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Service_Type_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Availability=\"Active\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Storage Rates by Dealer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Storage_Rates_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Storage_Rates_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Storage Locations by Dealer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Storage_Location_Options_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Storage_Location_Options_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Promotional Discounts by Dealer AND Availability",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Promotional_Discounts_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Is_Available=\"Yes\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Promotional_Discounts_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Is_Available=\"Yes\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Postal Zones Pricing by Dealer AND Postal Zone",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Postal_Zones_Pricing_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Postal_Zone_Name=\"A\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Postal_Zones_Pricing_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Postal_Zone_Name=\"A\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Additional Items by Dealer AND Availability",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Add_Ons?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"All_Add_Ons"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Give a Quote By ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/Give_a_Quote_Report?criteria=ID==3208680000029232003",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"Give_a_Quote_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "ID==3208680000029232003"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Give a Quote By Quote #",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Zoho-oauthtoken {{access_token}}"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/Give_a_Quote_Report?criteria=Quote==5886",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"Give_a_Quote_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Quote==5886"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Selected Box Sizes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Zoho-oauthtoken {{access_token}}"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/Quote_Box_Sizes_subform_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"Quote_Box_Sizes_subform_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Selected Add Ons",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Zoho-oauthtoken {{access_token}}"
+					}
+				],
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/Add_Ons_subform_Report",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"Add_Ons_subform_Report"
+					],
+					"query": [
+						{
+							"key": "criteria",
+							"value": "ID==3208680000028865044",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create Quote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"Have_a_Promo_Code1\": \"\",\r\n        \"Email\": \"\",\r\n        \"Discount\": \"\",\r\n        \"Initial_Delivery\": \"0.00\",\r\n        \"Phone_Number\": \"\",\r\n        \"Destination_Serviced_Postal_Code\": \"3208680000026799545\",\r\n        \"Name\": \"v2 Test\",\r\n        \"Get_Pricing_For_Service_Type_lookup\": \"3208680000026797835\",\r\n        \"Box_Orders_lookup\": \"\",\r\n        \"Storage_Location_Options_Lookup\": \"3208680000026802357\",\r\n        \"Quote_Status\": \"Follow Up\",\r\n        \"Dealer_Lookup\": \"3208680000026762156\",\r\n        \"Notes\": \"This quote was updated using the Zoho Creator v2 APIs.\",\r\n        \"Unit_Size\": \"\",\r\n        \"Total_Due_Prior_To_Delivery\": \"0.00\",\r\n        \"Monthly_Rental\": \"0.00\",\r\n        \"Relocation_Fee\": \"\",\r\n        \"Final_Pick_Up\": \"0.00\",\r\n        \"Starting_Delivery_Serviced_Postal_Code\": \"3208680000026802161\",\r\n        \"Storage_Location\": \"Outside At MI-BOX Secure Storage Center\",\r\n        \"Promotional_Discounts\": \"\",\r\n        \"Select_Add_Ons\": [\r\n            {\r\n                \"Quantity\": \"1\",\r\n                \"Add_Ons\": \"3208680000029450201\",\r\n                \"Dealer_Lookup\": \"3208680000026762156\"\r\n            }\r\n        ],\r\n        \"Select_Box_Sizes_sub\": [\r\n            {\r\n\t            \"Quantity\": \"1\",\r\n\t            \"Available_MI_BOX_Sizes_lookup\": \"3208680000026704683\",\r\n\t            \"Notes\": \"20x8 Box\"\r\n\t        }\r\n\t\t]\r\n    },\r\n    \"result\": {\r\n        \"fields\": [\r\n            \"Quote\",\r\n            \"ID\"\r\n        ],\r\n        \"message\": true,\r\n        \"tasks\": true\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/form/Give_a_Quote",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"form",
+						"Give_a_Quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update Quote",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Zoho-oauthtoken {{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"Select_Add_Ons\": [\r\n            {\r\n                \"Quantity\": \"1\",\r\n                \"Add_Ons\": \"3208680000029450183\",\r\n                \"Dealer_Lookup\": \"3208680000026762156\"\r\n            }\r\n        ],\r\n        \"Notes\": \"This quote was updated using the Zoho Creator v2 APIs.\"\r\n    },\r\n    \"result\": {\r\n        \"fields\": [\r\n            \"Quote\",\r\n            \"ID\"\r\n        ],\r\n        \"message\": true,\r\n        \"tasks\": true\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/Give_a_Quote_Report/3208680000029455032",
+					"protocol": "https",
+					"host": [
+						"creator",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"brianborn11",
+						"fergie2-webquote-test",
+						"report",
+						"Give_a_Quote_Report",
+						"3208680000029455032"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Refresh Access Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b0c1bde-483a-4933-817e-646a27579036",
+						"exec": [
+							"var jwtResponse = JSON.parse(responseBody);\r",
+							"pm.collectionVariables.set(\"access_token\", jwtResponse.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "1000.9ZQGLZDJ2D2X0DFV9N0OSD40D5BADE",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c948b384c21080163f8cecc0a340addbc67b29ec67",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "1000.d0efd0e58a360adb5b84911cb235407c.cb676de5350f3906f0af4e174a02551a",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{redirect-url}}",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "{{refresh_token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://accounts.zoho.com/oauth/v2/token",
+					"protocol": "https",
+					"host": [
+						"accounts",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"v2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Self-Client Access Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2e64d065-757c-4975-8400-36207e1207bd",
+						"exec": [
+							"var jwtResponse = JSON.parse(responseBody);\r",
+							"pm.collectionVariables.set(\"access_token\", jwtResponse.access_token);\r",
+							"pm.collectionVariables.set(\"refresh_token\", jwtResponse.refresh_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "authtooauth",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "1000.9ZQGLZDJ2D2X0DFV9N0OSD40D5BADE",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c948b384c21080163f8cecc0a340addbc67b29ec67",
+							"type": "text"
+						},
+						{
+							"key": "authtoken",
+							"value": "4157d4c5cc19e4e6d65091d00d0332f1",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{scope}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://accounts.zoho.com/oauth/v2/token/self/authtooauth",
+					"protocol": "https",
+					"host": [
+						"accounts",
+						"zoho",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"v2",
+						"token",
+						"self",
+						"authtooauth"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0f6e56e6-203c-41a2-b2be-65fe456f68c5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "addc2ab3-1142-446e-9c09-f8ab3b851d9c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "86f1c149-c45c-40d9-b3bd-6729705b9edd",
+			"key": "access_token",
+			"value": ""
+		},
+		{
+			"id": "386520e6-f080-47a6-88b5-8f114d25bac5",
+			"key": "refresh_token",
+			"value": ""
+		}
+	],
+	"protocolProfileBehavior": {}
+}
