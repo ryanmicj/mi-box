@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b079b7d6-cc7f-47bc-87e8-ad1f587124c8",
-		"name": "MI-BOX Quote Methods V2",
+		"_postman_id": "454e9b97-d17f-4e5a-9b33-7baff4486836",
+		"name": "MI-BOX Quote Methods V2 - New Report Names",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -17,7 +17,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report//All_Serviced_Postal_Codes_Report?criteria=Postal_Code_Text=\"46311\"",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuoteServicedPostalCodes?criteria=Postal_Code_Text=\"46311\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -30,8 +30,7 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"",
-						"All_Serviced_Postal_Codes_Report"
+						"WebQuoteServicedPostalCodes"
 					],
 					"query": [
 						{
@@ -58,7 +57,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/MI_BOX_Dealer_Agent_Information_Report",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuoteDealerInfo",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -71,7 +70,7 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"MI_BOX_Dealer_Agent_Information_Report"
+						"WebQuoteDealerInfo"
 					],
 					"query": [
 						{
@@ -96,7 +95,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Available_MI_BOX_Sizes_Report",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuoteAvailableBoxSizes?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -109,13 +108,12 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"All_Available_MI_BOX_Sizes_Report"
+						"WebQuoteAvailableBoxSizes"
 					],
 					"query": [
 						{
 							"key": "criteria",
-							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
-							"disabled": true
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\""
 						}
 					]
 				}
@@ -171,7 +169,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Storage_Rates_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuoteStorageRates?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -184,7 +182,7 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"All_Storage_Rates_Report"
+						"WebQuoteStorageRates"
 					],
 					"query": [
 						{
@@ -208,7 +206,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Storage_Location_Options_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report//WebQuoteStorageLocations?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -221,7 +219,8 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"All_Storage_Location_Options_Report"
+						"",
+						"WebQuoteStorageLocations"
 					],
 					"query": [
 						{
@@ -245,7 +244,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Promotional_Discounts_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Is_Available=\"Yes\"",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuotePromoDiscounts?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"%26%26Is_Available=\"Yes\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -258,12 +257,12 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"All_Promotional_Discounts_Report"
+						"WebQuotePromoDiscounts"
 					],
 					"query": [
 						{
 							"key": "criteria",
-							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Is_Available=\"Yes\""
+							"value": "Dealer_Lookup.Company_Name=\"MI-BOX NWI\"%26%26Is_Available=\"Yes\""
 						}
 					]
 				}
@@ -282,7 +281,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Postal_Zones_Pricing_Report?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Postal_Zone_Name=\"A\"",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuotePostalZonesPricing?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\" %26%26 Postal_Zone_Name=\"A\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -295,7 +294,7 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"All_Postal_Zones_Pricing_Report"
+						"WebQuotePostalZonesPricing"
 					],
 					"query": [
 						{
@@ -319,7 +318,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/All_Add_Ons?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
+					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/WebQuoteAllAddOns?criteria=Dealer_Lookup.Company_Name=\"MI-BOX NWI\"",
 					"protocol": "https",
 					"host": [
 						"creator",
@@ -332,7 +331,7 @@
 						"brianborn11",
 						"fergie2-webquote-test",
 						"report",
-						"All_Add_Ons"
+						"WebQuoteAllAddOns"
 					],
 					"query": [
 						{
@@ -506,7 +505,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"data\": {\r\n        \"Have_a_Promo_Code1\": \"\",\r\n        \"Email\": \"\",\r\n        \"Discount\": \"\",\r\n        \"Initial_Delivery\": \"0.00\",\r\n        \"Phone_Number\": \"\",\r\n        \"Destination_Serviced_Postal_Code\": \"3208680000026799545\",\r\n        \"Name\": \"v2 Test\",\r\n        \"Get_Pricing_For_Service_Type_lookup\": \"3208680000026797835\",\r\n        \"Box_Orders_lookup\": \"\",\r\n        \"Storage_Location_Options_Lookup\": \"3208680000026802357\",\r\n        \"Quote_Status\": \"Follow Up\",\r\n        \"Dealer_Lookup\": \"3208680000026762156\",\r\n        \"Notes\": \"This quote was updated using the Zoho Creator v2 APIs.\",\r\n        \"Unit_Size\": \"\",\r\n        \"Total_Due_Prior_To_Delivery\": \"0.00\",\r\n        \"Monthly_Rental\": \"0.00\",\r\n        \"Relocation_Fee\": \"\",\r\n        \"Final_Pick_Up\": \"0.00\",\r\n        \"Starting_Delivery_Serviced_Postal_Code\": \"3208680000026802161\",\r\n        \"Storage_Location\": \"Outside At MI-BOX Secure Storage Center\",\r\n        \"Promotional_Discounts\": \"\",\r\n        \"Select_Add_Ons\": [\r\n            {\r\n                \"Quantity\": \"1\",\r\n                \"Add_Ons\": \"3208680000029450201\",\r\n                \"Dealer_Lookup\": \"3208680000026762156\"\r\n            }\r\n        ],\r\n        \"Select_Box_Sizes_sub\": [\r\n            {\r\n\t            \"Quantity\": \"1\",\r\n\t            \"Available_MI_BOX_Sizes_lookup\": \"3208680000026704683\",\r\n\t            \"Notes\": \"20x8 Box\"\r\n\t        }\r\n\t\t]\r\n    },\r\n    \"result\": {\r\n        \"fields\": [\r\n            \"Quote\",\r\n            \"ID\"\r\n        ],\r\n        \"message\": true,\r\n        \"tasks\": true\r\n    }\r\n}"
+					"raw": "{\r\n    \"data\": {\r\n        \"Have_a_Promo_Code1\": \"\",\r\n        \"Email\": \"\",\r\n        \"Discount\": \"\",\r\n        \"Initial_Delivery\": \"0.00\",\r\n        \"Phone_Number\": \"\",\r\n        \"Destination_Serviced_Postal_Code\": \"3208680000026799545\",\r\n        \"Name\": \"v2 Test\",\r\n        \"Get_Pricing_For_Service_Type_lookup\": \"3208680000026797835\",\r\n        \"Box_Orders_lookup\": \"\",\r\n        \"Storage_Location_Options_Lookup\": \"3208680000026802357\",\r\n        \"Quote_Status\": \"Follow Up\",\r\n        \"Dealer_Lookup\": \"3208680000026762156\",\r\n        \"Notes\": \"This quote was updated using the Zoho Creator v2 APIs.\",\r\n        \"Unit_Size\": \"\",\r\n        \"Total_Due_Prior_To_Delivery\": \"0.00\",\r\n        \"Monthly_Rental\": \"0.00\",\r\n        \"Relocation_Fee\": \"\",\r\n        \"Final_Pick_Up\": \"0.00\",\r\n        \"Starting_Delivery_Serviced_Postal_Code\": \"3208680000026802161\",\r\n        \"Storage_Location\": \"Outside At MI-BOX Secure Storage Center\",\r\n        \"Promotional_Discounts\": \"\",\r\n        \"Select_Add_Ons\": [\r\n            {\r\n                \"Quantity\": \"1\",\r\n                \"Add_Ons\": \"3208680000029450201\",\r\n                \"Dealer_Lookup\": \"3208680000026762156\"\r\n            }\r\n        ],\r\n        \"Select_Box_Sizes_sub\": [\r\n            {\r\n\t            \"Quantity\": \"1\",\r\n\t            \"Available_MI_BOX_Sizes_lookup\": \"3208680000026704683\",\r\n\t            \"Notes\": \"20x8 Box\"\r\n\t        }\r\n\t\t]\r\n    },\r\n    \"result\": {\r\n        \"fields\": [\r\n            \"Quote\",\r\n            \"ID\"\r\n        ],\r\n        \"message\": true,\r\n        \"tasks\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {}
+					}
 				},
 				"url": {
 					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/form/Give_a_Quote",
@@ -541,7 +543,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"data\": {\r\n        \"Select_Add_Ons\": [\r\n            {\r\n                \"Quantity\": \"1\",\r\n                \"Add_Ons\": \"3208680000029450183\",\r\n                \"Dealer_Lookup\": \"3208680000026762156\"\r\n            }\r\n        ],\r\n        \"Notes\": \"This quote was updated using the Zoho Creator v2 APIs.\"\r\n    },\r\n    \"result\": {\r\n        \"fields\": [\r\n            \"Quote\",\r\n            \"ID\"\r\n        ],\r\n        \"message\": true,\r\n        \"tasks\": true\r\n    }\r\n}"
+					"raw": "{\r\n    \"data\": {\r\n        \"Select_Add_Ons\": [\r\n            {\r\n                \"Quantity\": \"1\",\r\n                \"Add_Ons\": \"3208680000029450183\",\r\n                \"Dealer_Lookup\": \"3208680000026762156\"\r\n            }\r\n        ],\r\n        \"Notes\": \"This quote was updated using the Zoho Creator v2 APIs.\"\r\n    },\r\n    \"result\": {\r\n        \"fields\": [\r\n            \"Quote\",\r\n            \"ID\"\r\n        ],\r\n        \"message\": true,\r\n        \"tasks\": true\r\n    }\r\n}",
+					"options": {
+						"raw": {}
+					}
 				},
 				"url": {
 					"raw": "https://creator.zoho.com/api/v2/brianborn11/fergie2-webquote-test/report/Give_a_Quote_Report/3208680000029455032",
@@ -570,7 +575,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "0b0c1bde-483a-4933-817e-646a27579036",
+						"id": "042e7b97-4b6d-4ba2-b710-0a93441e2217",
 						"exec": [
 							"var jwtResponse = JSON.parse(responseBody);\r",
 							"pm.collectionVariables.set(\"access_token\", jwtResponse.access_token);"
@@ -616,7 +621,10 @@
 							"value": "{{refresh_token}}",
 							"type": "text"
 						}
-					]
+					],
+					"options": {
+						"formdata": {}
+					}
 				},
 				"url": {
 					"raw": "https://accounts.zoho.com/oauth/v2/token",
@@ -641,7 +649,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2e64d065-757c-4975-8400-36207e1207bd",
+						"id": "363ecc0e-0772-4fbf-9401-d0b0cdb92a1f",
 						"exec": [
 							"var jwtResponse = JSON.parse(responseBody);\r",
 							"pm.collectionVariables.set(\"access_token\", jwtResponse.access_token);\r",
@@ -682,7 +690,10 @@
 							"value": "{{scope}}",
 							"type": "text"
 						}
-					]
+					],
+					"options": {
+						"formdata": {}
+					}
 				},
 				"url": {
 					"raw": "https://accounts.zoho.com/oauth/v2/token/self/authtooauth",
@@ -708,7 +719,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0f6e56e6-203c-41a2-b2be-65fe456f68c5",
+				"id": "e322606a-a875-4e53-b88d-1f83d4321724",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -718,7 +729,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "addc2ab3-1142-446e-9c09-f8ab3b851d9c",
+				"id": "b27c4ab7-b983-4edb-8c51-7deae923daf7",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -728,12 +739,12 @@
 	],
 	"variable": [
 		{
-			"id": "86f1c149-c45c-40d9-b3bd-6729705b9edd",
+			"id": "18870f65-0e01-407d-b6d8-83099f2a379d",
 			"key": "access_token",
 			"value": ""
 		},
 		{
-			"id": "386520e6-f080-47a6-88b5-8f114d25bac5",
+			"id": "f9c78628-7d27-4d68-b6a8-7e05f6dc1fb8",
 			"key": "refresh_token",
 			"value": ""
 		}
